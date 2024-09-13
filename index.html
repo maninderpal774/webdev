@@ -1,47 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Birdwatching</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300%7CCinzel+Decorative:700" rel="stylesheet">
-    <link rel="stylesheet" href="style.css"> 
-    <!--[if lt IE 9]>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-    <![endif]-->
-  </head>
+    <style>
+        body {
+            background-color: #00FF00; /* Green background */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
 
-  <body>
+        header {
+            text-align: center;
+            padding: 10px 0;
+            font-size: 36px;
+            font-family: 'Lucida Calligraphy', sans-serif;
+            font-weight: bold;
+        }
 
-      <h1>Birdwatching</h1>
-      <img src="dove.png" alt="a simple dove logo">
+        nav {
+            text-align: center;
+            background-color: #00FF00;
+            padding: 10px 0;
+        }
 
+        nav a {
+            color: black;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
 
-      <ul>
-        <li><span>Home</span></li>
-        <li><a href="#">Get started</a></li>
-        <li><a href="#">Photos</a></li>
-        <li><a href="#">Gear</a></li>
-        <li><a href="#">Forum</a></li>
-      </ul>
+        table {
+            width: 100%;
+            margin-top: 20px;
+        }
 
+        td {
+            padding: 20px;
+            vertical-align: top;
+        }
 
-      <h2>Welcome</h2>
+        .welcome {
+            background-color: #99FF99;
+            color: #330000;
+            font-family: 'Lucida Calligraphy', sans-serif;
+        }
 
-      <p>Welcome to our fake birdwatching site. If this were a real site, it would be the ideal place to come to learn more about birdwatching, whether you are a beginner looking to learn how to get into birding, or an expert wanting to share ideas, tips, and photos with other like-minded people.</p>
+        .photos {
+            background-color: #99FF99;
+        }
 
-      <p>So don't waste time! Get what you need, then turn off that computer and get out into the great outdoors!</p>
+        .photos img {
+            width: 48%; /* Set width to 48% to account for padding/margins */
+            height: auto;
+            margin-bottom: 10px;
+            display: inline-block;
+        }
 
-      <h2>Favourite photos</h2>
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #00FF00;
+            font-size: 12px;
+        }
 
-      <a href="favorite-1.jpg"><img src="favorite-1_th.jpg" alt="Small black bird, black claws, long black slender beak, links to larger version of the image"></a>
-      <a href="favorite-2.jpg"><img src="favorite-2_th.jpg" alt="Top half of a pretty bird with bright blue plumage on neck, light colored beak, blue headdress, links to larger version of the image"></a>
-      <a href="favorite-3.jpg"><img src="favorite-3_th.jpg" alt="Top half of a large bird with white plumage, very long curved narrow light colored break, links to larger version of the image"></a>
-      <a href="favorite-4.jpg"><img src="favorite-4_th.jpg" alt="Large bird, mostly white plumage with black plumage on back and rear, long straight white beak, links to larger version of the image"></a>
+        footer a {
+            color: blue;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
 
+    <header>
+        BIRDWATCHING
+        <img src="dove.png" alt="Dove Icon" style="width: 50px; height: 50px; ">
+    </header>
 
-      <p>This fake website example is CC0 — any part of this code may be reused in any way you wish. Original example written by Chris Mills, 2016.</p>
+    <nav>
+        <a href="#">HOME</a>
+        <a href="#">GET STARTED</a>
+        <a href="#">PHOTOS</a>
+        <a href="#">GEAR</a>
+        <a href="#">FORUM</a>
+    </nav>
 
-      <p><a href="http://game-icons.net/lorc/originals/dove.html">Dove icon</a> by Lorc.</p>
+    <table>
+        <tr>
+            <td class="welcome" colspan="2">
+                <h1>WELCOME</h1>
+                <p>
+                    Welcome to our fake birdwatching site. If this were a real site, it would be the ideal place to learn more about birdwatching, whether you are a beginner looking to learn how to get into birding, or an expert wanting to share ideas, tips, and photos with other like-minded people.
+                </p>
+                <p>
+                    So don't waste time! Get what you need, then turn off that computer and get out into the great outdoors!
+                </p>
+            </td>
+            <td class="photos">
+                <h2>FAVOURITE PHOTOS</h2>
+                <img src="favorite-1.jpg" alt="Bird Photo 1">
+                <img src="favorite-2.jpg" alt="Bird Photo 2">
+                <img src="favorite-3.jpg" alt="Bird Photo 3">
+                <img src="favorite-4.jpg" alt="Bird Photo 4">
+            </td>
+        </tr>
+    </table>
 
-  </body>
+    <footer>
+        This fake website example is CC0 — any part of this code may be reused in any way you wish. Original example written by Chris Mills, 2016.
+        <br>
+        <a href="https://example.com/dove-icon">Dove icon</a> by Lorc.
+    </footer>
+
+</body>
 </html>
